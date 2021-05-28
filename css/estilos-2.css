@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100vw;
+    height: 20vh;
+    background: #C2003C;
+    padding-top: 0.1px;
+}
+
+header div,
+header nav{
+    width: 100%;
+    height: 50%;
+}
+
+header div h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    text-align: center;
+    color:#fff;
+}
+
+header nav{
+    background:#750025;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+header nav a{
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+    color: #fff;
+    border: 3px solid #750025;
+    align-self: center;
+    padding: 1.4rem 7rem;
+}
+
+header nav a.actual{
+    border:3px solid #FBF37C;
+    color: #FBF37C;
+}
+
+header nav a:hover{
+    border: 3px solid #F5004E;
+    color: #F5004E;
+    background: #fff;
+    transition: 500ms;
+}
+
+
+/*Modificable*/
+
+
+/*estilizamos el quienes somos*/
+section.texto{
+    width: 80%;
+    height: 30vh;
+    margin: 8% auto;
+    display: flex;
+    flex-direction: column;
+}
+
+section.texto h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+section.texto p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    letter-spacing: -1px;
+    line-height: 2rem;
+}
+
+/*estilizamos tienda*/
+
+section.tienda{
+    width: 80vw;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section.tienda h2{
+    width: auto;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    border: 5px solid #F5004E;
+    padding: 3% 0;
+}
+
+section.tienda div div{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.tienda div div article{
+    width: 30%;
+    height: 50%;
+    background-color: #fff;
+    border: 3px solid #F5004E;
+    margin-bottom: 2%;
+}
+
+section.tienda div div article:hover{
+    transform: scale(1.1);
+    box-shadow: 8px 8px 1px 1px #000;
+    z-index: 3;
+    transition: 500ms;
+}
+
+
+section.tienda div div article img{
+    width: 100%;
+    height: fit-content;
+}
+
+section.tienda div div article h3{
+    width: auto;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: -1px;
+    text-transform: uppercase;
+    background-color:#F5004E;
+    padding: 3% 24%;
+}
+
+section.tienda div div article p{
+    text-align: justify;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    letter-spacing: -1px;
+    line-height: 2rem;
+}
+
+section.tienda div div article span{
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    padding: 2% 8%;
+    color: #fff;
+    border: 2px solid #C2003C;
+    background: #F5004E;
+    border-radius: 2rem;
+    margin: 0 auto 5% auto;
+}
+
+section.tienda div div article span:hover{
+    color: #F5004E;
+    background: #fff;
+    transform: scale(1.1);
+    transition: 500ms;
+}
+
+section.tienda div div article span:active{
+    transform: scale(0.92);
+    transition: 500ms;
+}
+/*Modificable*/
+
+footer{
+  width: 100vw;
+  height: 20vh;
+  background: #C2003C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+footer span{
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+@media only screen and (max-width:700px){
+    header nav{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+   }
+
+   header nav a{
+       width: 100%;
+       text-align: center;
+   }
+
+   section.texto{
+       margin-top: 60%;
+   }
+
+   section.tienda{
+       margin-top: 70%;
+   }
+
+   section.tienda div div{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+   }
+
+   section.tienda div div article{
+       width: 100%;
+       height: auto;
+   }
+}

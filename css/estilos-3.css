@@ -5,13 +5,13 @@
 body{
     padding: 0;
     margin: 0;
-    background: linear-gradient(90deg, #80001A 20%, #CC002A 20%, #CC002A 40%, #802638 40%, #802638 60%, #FF0033 60%, #FF0033 80%, #FF4D70 80%);
+    background: linear-gradient(90deg,#0D0D0D 20%, #BF863F 20%, #BF863F 40%, #D9A13B 40%, #D9A13B 60%,#F2CB57 60%,#F2CB57 80%, #F2EA79 80%);
 }
 
 header{
     width: 100vw;
     height: 20vh;
-    background: #C2003C;
+    background: #5C3502;
     padding-top: 0.1px;
 }
 
@@ -32,7 +32,7 @@ header div h1{
 }
 
 header nav{
-    background:#750025;
+    background:#9C5903;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -46,7 +46,7 @@ header nav a{
     text-transform: uppercase;
     letter-spacing: -1px;
     color: #fff;
-    border: 3px solid #750025;
+    border: 3px solid #9C5903;
     align-self: center;
     padding: 1.4rem 7rem;
 }
@@ -57,8 +57,8 @@ header nav a.actual{
 }
 
 header nav a:hover{
-    border: 3px solid #F5004E;
-    color: #F5004E;
+    border: 3px solid #E88605;
+    color: #9C5903;
     background: #fff;
     transition: 500ms;
 }
@@ -70,13 +70,14 @@ header nav a:hover{
 /*estilizamos el quienes somos*/
 section.texto{
     width: 80%;
-    height: fit-content;
+    height: 40vh;
     margin: 8% auto;
     display: flex;
     flex-direction: column;
-    border: 5px solid #000;
-    background: #fff;
+    background-color: #fff;
     padding: 2% 0;
+    text-align: center;
+    border: 5px solid #000;
 }
 
 section.texto h2{
@@ -85,7 +86,6 @@ section.texto h2{
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: -1px;
-    text-align: center;
 }
 
 section.texto p{
@@ -116,8 +116,8 @@ section.tienda h2{
     letter-spacing: -1px;
     text-transform: uppercase;
     border: 5px solid #000;
-    background: #fff;
     padding: 3% 0;
+    background-color: #fff;
 }
 
 section.tienda div div{
@@ -132,7 +132,7 @@ section.tienda div div article{
     width: 30%;
     height: 50%;
     background-color: #fff;
-    border: 3px solid #000;
+    border: 5px solid #000;
     margin-bottom: 2%;
 }
 
@@ -157,8 +157,8 @@ section.tienda div div article h3{
     font-size: 1.2rem;
     letter-spacing: -1px;
     text-transform: uppercase;
-    background-color:#F5004E;
-    padding: 3% 24%;
+    background-color:#E88605;
+    padding: 3% 36.7%;
 }
 
 section.tienda div div article p{
@@ -177,14 +177,14 @@ section.tienda div div article span{
     text-align: center;
     padding: 2% 8%;
     color: #fff;
-    border: 2px solid #C2003C;
-    background: #F5004E;
+    border: 2px solid #5C3502;
+    background: #9C5903;
     border-radius: 2rem;
     margin: 0 auto 5% auto;
 }
 
 section.tienda div div article span:hover{
-    color: #F5004E;
+    color: #9C5903;
     background: #fff;
     transform: scale(1.1);
     transition: 500ms;
@@ -199,7 +199,7 @@ section.tienda div div article span:active{
 footer{
   width: 100vw;
   height: 20vh;
-  background: #C2003C;
+  background: #5C3502;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -230,6 +230,11 @@ footer span{
 
    section.texto{
        margin-top: 60%;
+       height: fit-content;
+   }
+
+   section.texto h2{
+       text-align: center;
    }
 
    section.tienda{
@@ -247,3 +252,4 @@ footer span{
        height: auto;
    }
 }
+
